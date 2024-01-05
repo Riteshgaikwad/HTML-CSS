@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        :root{
+            --color:hsl(324,100%,16%);
+            --text-color:hsl(165,100%,50%);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: var(--color);
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        .box{
+            color: var(--text-color);
+        }
+        .move{
+            width: 100px;
+            height: 100px;
+            background-color:lightgreen ;
+            transition: 3s all ease;
+        }
+        .move:hover{
+            background-color: lightcoral;
+            transform: scale(2) translateX(500px) rotate(180deg);
+        }
+        .content{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .animation{
+            width: 200px;
+            height: 100px;
+            background-color: black;
+            border-top: 3px solid orange;
+            border-radius: 0 0 0.2em 0.2em;
+            display: flex;
+            animation: move 2s linear infinite;
+        }
+
+        @keyframes move {
+            0%,7%{
+                transform: rotate(0);
+            }
+            15%{
+                transform: rotate(-15deg);
+            }
+            25%{
+                transform: rotate(10deg);
+            }
+            35%{
+                transform: rotate(-10deg);
+            }
+            45%{
+                transform: rotate(6deg);
+            }
+            55%{
+                transform: rotate(-4deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veniam corrupti ducimus reiciendis deserunt maxime doloremque architecto doloribus totam deleniti!
+        </div>
+        <div class="move">
+        </div><br>
+        <div class="content">
+        <div class="animation">
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>

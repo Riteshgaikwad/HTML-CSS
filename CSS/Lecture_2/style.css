@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 5px;
+}
+#box1{
+    background-image: linear-gradient(red,blue);
+}
+#box2{
+    background-image: linear-gradient(red,blue,green);
+}
+#box3{
+    background-image:linear-gradient(to top,red,blue) ;
+}
+#box4{
+    /* background-image: linear-gradient(to right,red,blue); */
+    background-image: radial-gradient(yellow,skyblue);
+}
+#box5{
+    /* background-image: linear-gradient(to left,red,blue); */
+    background-image: radial-gradient(circle,blue,red,yellow);
+}
+#box6{
+    /* background-image: linear-gradient(to top  left,red, blue); */
+    background-image: radial-gradient(ellipse,yellow,blue,pink);
+}
+#box7{
+    /* background-image: linear-gradient(to bottom left ,red,blue); */
+    background-image:conic-gradient(red,white,yellow,blue);
+}
+#box8{
+    /* background-image: linear-gradient(to left top,red,blue); */
+    background-image: conic-gradient(red 90deg,yellow 40deg);
+}
+.container{
+    width: 500px;
+    height: 300px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    font-weight: 700;
+}
+p{
+    padding: 10px;
+}
+#p1{
+    text-shadow: 3px 3px;
+}
+#p2{
+    text-shadow: 4px 4px red;
+}
+#p3{
+    text-shadow: -4px 4px blue;
+}
+#p4{
+    text-shadow: 3px 3px 3px red;
+}
+.cont{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+}
+#cont1{
+    box-shadow: 10px 10px;
+}
+#cont2{
+    box-shadow: 10px 10px 10px;
+}
+#cont3{
+    box-shadow: 10px 10px 10px 2px inset;
+}
+.wrap{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    display: inline-block;
+    margin: 10px;
+}
+#flow1{
+    overflow: hidden;
+}
+#flow2{
+    overflow: scroll;
+}
+#flow3{
+    overflow: visible;
+}
+#flow4{
+    overflow: auto;
+}
+
+.pose{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    background-color: yellow;
+    display: inline-block;
+    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.6),
+    -2px -2px 10px rgba(255, 0, 0, 0.6);
+}
+#static{
+    position: static;
+}
+#sticky{
+    top: 0;
+    position: sticky;
+}
+#fixed{
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+#relative{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+#absolute{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    position: absolute;
+}

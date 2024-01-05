@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* This is element selector  */
+p{  
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100vw;
+}
+/* This is class selector */
+.Para1{ 
+    background-color: aquamarine;
+    padding: 10px;
+    width: 100vw;
+    color: black;
+}
+/* This is ID selector */
+#para2{
+    background-color: bisque;
+    
+    width: 100vw;
+    padding: 10px;
+}
+button{
+    padding: 3px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 6px;
+}
+/* This is pseudo class selector */
+button:hover{
+    background-color: lightgreen;
+}
+/* We can also select multiple selector or grouping
+    for example:- [p,button,h1{Properties}] 
+            In above example we can observe we have selected multiple tags in a group
+*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+.padding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    background-color: lightcoral;
+}
+.border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    background-color: lightgreen;
+}
+.margin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+    background-color: lightslategray;
+}
